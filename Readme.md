@@ -71,7 +71,7 @@ pip install cppyy
 We can verify that things are working with:
 
 ```
-$ pytyon2
+$ python2
 >>>  from clang.cindex import Config
 >>>  Config().lib
 >>>  <CDLL 'libclang-6.0.so', handle 7fffe4d35490 at 7f496430ee90>
