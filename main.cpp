@@ -11,7 +11,7 @@ int main(void) {
   knn.points.push_back(Point(5, 5));
   knn.points.push_back(Point(2, 5));
 
-  auto nearest = knn.nearest2(Point(0, 0), 3);
+  auto nearest = knn.nearest(Point(0, 0), 3);
   for (const auto n : nearest) {
     cout << n.x << ", " << n.y << endl;
   }
