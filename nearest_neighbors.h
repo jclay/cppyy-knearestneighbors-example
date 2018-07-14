@@ -13,7 +13,6 @@ public:
 class NearestNeighbors {
  public:
   NearestNeighbors() {};
-	void test();
   std::vector<Point> points;
-  std::vector<Point> nearest2(Point, int k);
+  std::vector<Point> nearest(Point, int k);
 };
