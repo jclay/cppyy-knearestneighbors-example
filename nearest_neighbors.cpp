@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector<Point> NearestNeighbors::nearest2(Point point, int k) {
+vector<Point> NearestNeighbors::nearest(Point point, int k) {
   sort(points.begin(), points.end(), [point](Point a, Point b) {
     // Not concerned with actual distances, so skip the sqrt
     auto norm_a =
@@ -17,8 +17,4 @@ vector<Point> NearestNeighbors::nearest2(Point point, int k) {
 
   auto k_nearest = vector<Point>(points.begin(), points.begin() + k);
   return k_nearest;
-}
-
-void NearestNeighbors::test() {
-	cout << "Hello World" << endl;
 }
