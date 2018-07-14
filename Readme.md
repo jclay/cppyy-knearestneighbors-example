@@ -17,7 +17,7 @@ int main(void) {
   knn.points.push_back(Point(5, 5));
   knn.points.push_back(Point(2, 5));
 
-  auto nearest = knn.nearest2(Point(0, 0), 3);
+  auto nearest = knn.nearest(Point(0, 0), 3);
   for (const auto n : nearest) {
     cout << n.x << ", " << n.y << endl;
   }
@@ -40,7 +40,7 @@ print(knn_example.__file__)
 knn = NearestNeighbors()
 points = [Point(2,0), Point(1,0), Point(0,10), Point(5,5), Point(2,5)]
 knn.points = std.vector[Point](points)
-result = knn.nearest2(Point(2.1, 5.3), 4)
+result = knn.nearest(Point(2.1, 5.3), 4)
 print(list(result))
 ```
 
@@ -107,6 +107,6 @@ print(knn_example.__file__)
 knn = NearestNeighbors()
 points = [Point(2,0), Point(1,0), Point(0,10), Point(5,5), Point(2,5)]
 knn.points = std.vector[Point](points)
-result = knn.nearest2(Point(2.1, 5.3), 4)
+result = knn.nearest(Point(2.1, 5.3), 4)
 print(list(result))
 ```
