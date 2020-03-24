@@ -3,11 +3,11 @@ cmake_minimum_required(VERSION 3.10)
 project(cppyy_example LANGUAGES CXX)
 
 
-execute_process(COMMAND cling-config --cmake OUTPUT_VARIABLE CPYY_MODULE_PATH OUTPUT_STRIP_TRAILING_WHITESPACE)
+execute_process(COMMAND cling-config --cmake OUTPUT_VARIABLE CPPYY_MODULE_PATH OUTPUT_STRIP_TRAILING_WHITESPACE)
 # Make sure this is set to something like:
 # ~/.local/lib/python2.7/site-packages/cpyy_backend/cmake 
-message("CPYY_MODULE_PATH: " ${CPYY_MODULE_PATH})
-list(INSERT CMAKE_MODULE_PATH 0 ${CPYY_MODULE_PATH})
+message("CPYY_MODULE_PATH: " ${CPPYY_MODULE_PATH})
+list(INSERT CMAKE_MODULE_PATH 0 ${CPPYY_MODULE_PATH})
 
 find_package(Cppyy)
 
